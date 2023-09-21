@@ -16,9 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Fİrst Look Xcode And Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-aA-ho7">
-                                <rect key="frame" x="47" y="416" width="304" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1275852" translatesAutoresizingMaskIntoConstraints="NO" id="pPr-di-dxy">
+                                <rect key="frame" x="16" y="59" width="361" height="349"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Fİrst Look Xcode And Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-aA-ho7">
+                                <rect key="frame" x="44" y="416" width="304" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="3DW-AW-7St"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
@@ -26,14 +31,24 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pPr-di-dxy" firstAttribute="centerX" secondItem="4fB-aA-ho7" secondAttribute="centerX" id="2HW-Z8-rvO"/>
+                            <constraint firstItem="pPr-di-dxy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3Rb-tH-cTB"/>
+                            <constraint firstItem="4fB-aA-ho7" firstAttribute="top" secondItem="pPr-di-dxy" secondAttribute="bottom" constant="8" id="5i8-VI-hG5"/>
+                            <constraint firstItem="pPr-di-dxy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5m7-vM-zIe"/>
+                            <constraint firstItem="4fB-aA-ho7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="DE7-DK-M7o"/>
+                            <constraint firstItem="pPr-di-dxy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TMF-lI-FOo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4fB-aA-ho7" secondAttribute="bottom" constant="374" id="m7V-46-GpC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-27"/>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1275852" width="2048" height="1152"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
