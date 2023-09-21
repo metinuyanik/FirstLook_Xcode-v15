@@ -53,6 +53,9 @@
                             <constraint firstItem="pPr-di-dxy" firstAttribute="centerX" secondItem="4fB-aA-ho7" secondAttribute="centerX" id="ip4-vc-PRT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label1" destination="4fB-aA-ho7" id="fr4-dd-fmh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
